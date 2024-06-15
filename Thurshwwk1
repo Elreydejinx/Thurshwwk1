@@ -1,0 +1,5 @@
+# The Calculator app
+
+operation = input("add, subtract,multiply, or divide:")
+
+    
