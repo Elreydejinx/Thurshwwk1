@@ -1,5 +1,43 @@
-# The Calculator app
+# The calculator app
 
-operation = input("add, subtract,multiply, or divide:")
+def add(x, y):
+    return x + y
+def subtract(x, y):
+    return x - y
+def multiply(x, y):
+    return x * y
+def divide(x, y):
+    return x / y
+print("Choose an operations: add, subtract, multiply, divide:")
 
-    
+while True:
+    operation = input("add, subtract, multiply, divide:")
+
+    if operation in ("add","subtract","multiply","divide"):
+        try:
+            num_1 = float(input("select 1st number"))
+            num_2 = float(input("select 2nd number"))
+        except ValueError:
+            print("numbers are the only accepted input try agian")
+            continue
+        if operation == "add":
+            print(add(num_1, num_2))
+        elif operation == "subtract":
+            print(subtract(num_1, num_2))
+        elif operation == "multiply":
+            print(multiply(num_1, num_2))
+        elif operation == "divide":
+            print(divide(num_1, num_2))
+    else:
+        print("continue yes/no:")
+
+        break
+
+# The Shopping list
+
+# items = ("selected item:")
+# shopping_cart = sum(items.append)
+# remove = ("what item do you want to remove:")
+# print("what items do you wish to add to shopping_cart:")
+
+ 
