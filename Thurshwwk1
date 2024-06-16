@@ -35,9 +35,15 @@ while True:
 
 # The Shopping list
 
-# items = ("selected item:")
-# shopping_cart = sum(items.append)
-# remove = ("what item do you want to remove:")
-# print("what items do you wish to add to shopping_cart:")
-
- 
+item = input("what are we adding to the shopping_cart?:")
+shopping_cart = input(item)
+remove = input("what are we removing from shopping_cart?:")
+if shopping_cart == input(item):
+    print(shopping_cart.append[item],"add to cart, remove, or done:")
+elif shopping_cart == remove:
+    print("what are we removing from shopping_cart?:")
+    print(shopping_cart.remove(item))
+    
+else:
+    print(f"{item} isn't in shopping_cart!")
+    print(shopping_cart)
